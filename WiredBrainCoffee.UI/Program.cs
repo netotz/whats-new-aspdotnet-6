@@ -1,13 +1,15 @@
 using Blazored.Modal;
+
 using Blazorise;
 using Blazorise.Bootstrap;
 using Blazorise.Icons.FontAwesome;
+
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+
 using WiredBrainCoffee.UI;
-using WiredBrainCoffee.UI.Services;
-using Microsoft.AspNetCore.Mvc;
 using WiredBrainCoffee.UI.Components;
+using WiredBrainCoffee.UI.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");

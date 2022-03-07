@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.HttpLogging;
 using WiredBrainCoffee.Api.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +16,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    app.UseHttpLogging();
 }
 
 app.UseHttpsRedirection();

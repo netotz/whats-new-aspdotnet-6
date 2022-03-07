@@ -11,7 +11,7 @@
         </div>
         <div class="row">
             <div class="col-md-8"> 
-                <Tabs FullWidth SelectedTab="@(ActiveTab != null ? ActiveTab : "coffee")" SelectedTabChanged="@OnSelectedTabChanged">
+                <Tabs FullWidth SelectedTab="@ActiveTab" SelectedTabChanged="@OnSelectedTabChanged">
                     <Items>
                         <Tab Name="coffee">Coffee</Tab>
                         <Tab Name="food">Food</Tab>

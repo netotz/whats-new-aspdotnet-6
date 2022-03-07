@@ -33,6 +33,15 @@ namespace WiredBrainCoffee.UI.Pages
         [SupplyParameterFromQuery]
         public string ActiveTab { get; set; }
 
+        protected override void OnInitialized()
+        {
+            if (ActiveTab is null)
+            {
+                ActiveTab = "coffee";
+            }
+            base.OnInitialized();
+        }
+
         private Task OnSelectedTabChanged(string name)
         {
             ActiveTab = name;

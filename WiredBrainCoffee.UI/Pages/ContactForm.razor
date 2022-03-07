@@ -1,5 +1,4 @@
 ﻿@page "/Contact"
-@using System.Net.Http;
 
 <div class="page-wrapper">
     <div class="container">
@@ -8,7 +7,20 @@
                 <CustomerContact />
             </div>
             <div class="col-md-4">
-                <Chat />
+                <ErrorBoundary>
+                    <ChildContent>
+                        <Chat />
+                    </ChildContent>
+                    <ErrorContent>
+                        <Alert Color="Color.Danger" Visible>
+                            <AlertMessage>Sorry!</AlertMessage>
+                            <AlertDescription>
+                                An error occured while trying to connect to an agent.
+                                Please try again later.
+                            </AlertDescription>
+                        </Alert>
+                    </ErrorContent>
+                </ErrorBoundary>
                 <hr />
                 <MailingList />
                 <hr />
@@ -17,8 +29,3 @@
         </div>
     </div>
 </div>
-
-@code
-{
-
-} 

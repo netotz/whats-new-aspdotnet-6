@@ -4,21 +4,13 @@ namespace WiredBrainCoffee.UI.Pages;
 
 public partial class ContactForm
 {
-    public Type ContactType { get; private set; }
+    public record ContactType(Type Type, string Title);
 
-    protected override void OnInitialized()
+    public ContactType[] ContactTypes { get; } = new[]
     {
-        ContactType = typeof(CustomerContact);
-        base.OnInitialized();
-    }
-
-    private void OnSelectedContactTypeChanged(string newContactType)
-    {
-        ContactType = newContactType switch
-        {
-            nameof(CustomerContact) => typeof(CustomerContact),
-            nameof(PartnerContact) => typeof(PartnerContact),
-            _ => throw new ArgumentException($"The type {newContactType} is not valid."),
-        };
-    }
+        new ContactType(typeof(CustomerContact), CustomerContact.Title),
+        new ContactType(typeof(PartnerContact), PartnerContact.Title)
+    };
+    public int SelectedIndex { get; private set; } = 0;
+    public ContactType SelectedContactType => ContactTypes[SelectedIndex];
 }

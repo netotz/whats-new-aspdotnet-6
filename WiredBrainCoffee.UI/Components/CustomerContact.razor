@@ -3,7 +3,7 @@
 @inject IContactService ContactService
 
 
-<h1>Customer Contact</h1>
+<h1>@Title</h1>
 <p>We'd love to hear from you! We try our best to respond within 24 hours.</p>
 <hr />
 
@@ -39,6 +39,7 @@
 </EditForm>
 
 @code {
+    public static string Title { get; } = "Customer Contact";
     public Contact Contact = new Contact();
 
     IReadOnlyList<IBrowserFile> selectedFiles;

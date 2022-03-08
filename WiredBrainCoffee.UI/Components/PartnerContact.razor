@@ -1,7 +1,7 @@
 ﻿@inject NavigationManager NavManager
 @inject IContactService ContactService
 
-<h1>Partner Contact</h1>
+<h1>@Title</h1>
 <p>We'd love to hear from you! We try our best to respond within 24 hours.</p>
 <hr />
 
@@ -42,6 +42,7 @@
 </EditForm>
 
 @code {
+    public static string Title { get; } = "Partner Contact";
     public Contact Contact = new Contact();
 
     IReadOnlyList<IBrowserFile> selectedFiles;

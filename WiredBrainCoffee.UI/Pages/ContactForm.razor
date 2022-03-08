@@ -1,4 +1,4 @@
-﻿@page "/Contact"
+﻿@page "/contact"
 
 <PageTitle>
     Contact us
@@ -8,12 +8,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <Select TValue="string" SelectedValueChanged="@OnSelectedContactTypeChanged">
-                    <SelectItem Value="@nameof(CustomerContact)">Customer</SelectItem>
-                    <SelectItem Value="@nameof(PartnerContact)">Partner</SelectItem>
+                <Span>@ContactTypes.Length</Span>
+                <Select @bind-SelectedValue="@SelectedIndex">
+                    @for (var i = 0; i < ContactTypes.Length; i++)
+                    {
+                        var typeIndex = i;
+                        <SelectItem Value="@typeIndex">@ContactTypes[typeIndex].Title</SelectItem>
+                    }
                 </Select>
                 <hr />
-                <DynamicComponent Type="@ContactType"></DynamicComponent>
+                <DynamicComponent Type="SelectedContactType.Type"></DynamicComponent>
             </div>
             <div class="col-md-4">
                 <ErrorBoundary>

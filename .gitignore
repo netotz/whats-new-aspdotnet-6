@@ -1,3 +1,5 @@
+*.db
+
 *.swp
 *.*~
 project.lock.json

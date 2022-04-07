@@ -1,7 +1,7 @@
 ﻿using Blazored.Modal.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
-using WiredBrainCoffee.Models;
+using WiredBrainCoffee.Shared;
 using WiredBrainCoffee.UI.Services;
 using WiredBrainCoffee.UI.Components;
 

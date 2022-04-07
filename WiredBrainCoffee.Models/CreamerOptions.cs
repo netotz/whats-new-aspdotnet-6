@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WiredBrainCoffee.Models
+namespace WiredBrainCoffee.Shared
 {
     public enum CreamerOptions
     {

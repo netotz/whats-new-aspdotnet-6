@@ -1,4 +1,4 @@
-﻿using WiredBrainCoffee.Models;
+﻿using WiredBrainCoffee.Shared;
 
 namespace WiredBrainCoffee.UI.Services
 {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Net.Http;
 
-namespace WiredBrainCoffee.Models
+namespace WiredBrainCoffee.Shared
 {
     public class Contact
     {

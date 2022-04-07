@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.UI", "WiredBrainCoffee.UI\WiredBrainCoffee.UI.csproj", "{79DC35FE-13DC-4922-A8FB-D7DEB1DA9229}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.Models", "WiredBrainCoffee.Models\WiredBrainCoffee.Models.csproj", "{346869AD-EC05-49A1-AB84-2EE1EB975EBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.Shared", "WiredBrainCoffee.Models\WiredBrainCoffee.Shared.csproj", "{346869AD-EC05-49A1-AB84-2EE1EB975EBA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.Api", "WiredBrainCoffee.API\WiredBrainCoffee.Api.csproj", "{873394D7-23BD-413B-B891-2F71014FD462}"
 EndProject

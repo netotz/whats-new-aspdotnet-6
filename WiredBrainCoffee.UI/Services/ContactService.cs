@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.Forms;
 using System.Net.Http.Json;
-using WiredBrainCoffee.Models;
+using WiredBrainCoffee.Shared;
 
 namespace WiredBrainCoffee.UI.Services
 {

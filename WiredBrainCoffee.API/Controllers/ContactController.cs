@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WiredBrainCoffee.Models;
+using WiredBrainCoffee.Shared;
 
 namespace WiredBrainCoffee.Api.Controllers
 {

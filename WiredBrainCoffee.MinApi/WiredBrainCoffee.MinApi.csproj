@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WiredBrainCoffee.Models\WiredBrainCoffee.Models.csproj" />
+    <ProjectReference Include="..\WiredBrainCoffee.Models\WiredBrainCoffee.Shared.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,10 +2,11 @@ using Microsoft.EntityFrameworkCore;
 
 using System.Net;
 
-using WiredBrainCoffee.MinApi;
+using WiredBrainCoffee.MinApi.Database;
+using WiredBrainCoffee.MinApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("Orders") ?? "Data Source=Orders.db";
+var connectionString = builder.Configuration.GetConnectionString("Orders") ?? @"Data Source=Database\Orders.db";
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

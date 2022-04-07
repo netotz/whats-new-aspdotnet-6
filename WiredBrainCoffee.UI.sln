@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.UI", "Wire
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.Models", "WiredBrainCoffee.Models\WiredBrainCoffee.Models.csproj", "{346869AD-EC05-49A1-AB84-2EE1EB975EBA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.API", "WiredBrainCoffee.API\WiredBrainCoffee.API.csproj", "{873394D7-23BD-413B-B891-2F71014FD462}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.Api", "WiredBrainCoffee.API\WiredBrainCoffee.Api.csproj", "{873394D7-23BD-413B-B891-2F71014FD462}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WiredBrainCoffee.MinApi", "WiredBrainCoffee.MinApi\WiredBrainCoffee.MinApi.csproj", "{3AB446AC-09DF-466D-8B57-3B3A348A9774}"
 EndProject
